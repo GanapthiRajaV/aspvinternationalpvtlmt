@@ -1443,6 +1443,7 @@ textarea:focus {
 .item-icon::before {
 		content: "\f291";
 		position: absolute;
+		font-family: fontawesome;
 		left: 10px;
 		top: 6px;
 		display: block;
@@ -2002,18 +2003,18 @@ textarea:focus {
 	bottom: -11px;
 	opacity: 0;
 	left: 0;
-	 background: #ffb309;
+	background: #eba304;
 	right: 0;
 	height: 1px;
 	display: block;
 }
 .li-product-menu > li > a.active span::before {
-	 background: #ffb309;
+	background: #eba304;
 	opacity: 1;
 }
 .li-product-menu > li:hover > a span::before {
 	opacity: 1;
-	 background: #ffb309;
+	background: #eba304;
 }
 .li-product-menu li span.active::before {
 	opacity: 1;
@@ -2171,7 +2172,7 @@ textarea:focus {
   position: relative;
 }
 .product_desc .product_desc_info .product_name {
-	color: #0363cd;
+	color: #000;
 	display: block;
 	font-size: 14px;
 	font-weight: 500;
@@ -2179,7 +2180,7 @@ textarea:focus {
 	text-transform: capitalize;
 }
 .product_desc .product_desc_info .product_name:hover {
-  text-decoration: underline;
+  color: #7f5c11;
 }
 .product_desc .manufacturer a {
 	color: #a4a4a4;
@@ -2189,7 +2190,7 @@ textarea:focus {
 	transition: all 0.3s ease-in-out;
 }
 .product_desc .manufacturer a:hover {
-	color: #fed700;
+	color: #7f5c11;
 }
 .product_desc .product_desc_info .new-price ,
 .featured-price-box .new-price,
@@ -2492,6 +2493,7 @@ textarea:focus {
 }
 .li-banner > a > img, .single-banner > a > img {
 	width: 100%;
+	height: 230px;
 }
 /*----------------------------------------*/
 /*  2.6 Li's Laptop Features
@@ -3377,6 +3379,7 @@ li.right-menu .cat-mega-menu-2 > li {
 }
 .frequently-accordion .card-header a:after {
 	content: "\f068 ";
+	font-family: fontawesome;
 }
 .frequently-accordion .card-header a {
 	display: block;
@@ -4874,6 +4877,7 @@ span.required {
 }
 .product-image > a img {
   width: 100%;
+  height: 230PX;
 }
 .shop-products-wrapper .tab-content .tab-pane.active {
     display: block;
@@ -5334,7 +5338,7 @@ span.required {
 
 /* section Styles */
 .top-sec {
-    background-image: url("../images/top-banner.jpg");
+	background-image: linear-gradient(90deg, rgb(50 102 255 / 70%) 0%, #b38214c4 100%), url("../images/banners/top-banner.jpg");
     height: 60vh;
     background-repeat: no-repeat;
     background-position: center;
@@ -5346,7 +5350,8 @@ span.required {
     align-items: center;
 }
 .top-content{
-	background: linear-gradient(90deg, rgb(50 102 255 / 70%) 0%, #b38214c4 100%);
+	/* background: linear-gradient(90deg, rgb(50 102 255 / 70%) 0%, #b38214c4 100%); */
+	background: linear-gradient(90deg, rgb(150 108 31 / 45%) 0%, #6f76c48f 100%);
     padding: 25px 30px;
     color: #fff;
     margin: 10px;
@@ -5360,12 +5365,12 @@ span.required {
 	color: #fff;
 }
 .btn-common {
-	padding: 15px 25px;
-	cursor: pointer;
-	transition: all 0.5s ease-in;
-	color: #fff;
-	font-size: 20px;
-	font-weight: 300;
+    padding: 15px 25px;
+    cursor: pointer;
+    transition: all 0.5s ease-in;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
 }
 .btn-common:hover  {
     color: #dad4ff;
@@ -5399,7 +5404,7 @@ span.required {
 }
 
 .slider-area {
-	background-image: url('../images/top-banner.webp');
+	background-image: url('../images/top-sales/top-banner.webp');
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
@@ -5409,9 +5414,62 @@ span.required {
     position: absolute;
     top: 0;
     left: 0;
-    background: linear-gradient(90deg, rgb(215 223 249 / 73%) 0%, #efc25e5e 100%);
+    /* background: linear-gradient(90deg, rgb(215 223 249 / 73%) 0%, #efc25e5e 100%); */
+	background: #fffffff2;
     width: 100%;
     height: 477px;
+}
+
+/* sales part */
+.product-item {
+    height: auto;
+    overflow: hidden;
+    position: relative;
+    padding: 4px;
+	transition: all 0.5s ease-in;
+	box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+	margin: 15px 0;
+}
+.product-item:hover {
+	border: 1px solid orange;
+	cursor: pointer;
+}
+.sales-row{
+	margin: 15px 0;
+}
+.product-item img{
+    width: 100%;
+    padding: 10px;
+	transition: all 300ms ease-in-out;
+}
+.product-item h2{
+    font-size: 18px;
+    padding: 10px;
+    color: black;
+}
+.product-item p{
+    color: green;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 0;
+    padding: 0 10px;
+}
+.product-item .cards span {
+    background: orange;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    font-size: 14px;
+    margin: 0 1px;
+    font-weight: 600;
+}
+.product-item .cards:hover span{
+	background-color: red;
+}
+.product-item .price-list{
+	display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 @media (min-width: 320px) and (max-width: 480px){
 	.header-top-right ul li:nth-child(2){
@@ -5420,7 +5478,13 @@ span.required {
 	.top-content h2 {
 		font-size: 28px;
 	}
+	.title-part h1 {
+		font-size: 26px;
+	}
 	.slider-area-layer {
 		height: 505px;
 	}
+	.li-product-menu > li > a > span {
+        font-size: 12px !important;
+    }
 }
