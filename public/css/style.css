@@ -1352,7 +1352,7 @@ textarea:focus {
 	background: #fff;
 	border-radius: 5px;
 	border: 1px solid #e1e1e1;
-	min-width: 638px;
+	min-width: 590px;
 	height: 45px;
 	float: left;
 }
@@ -1407,7 +1407,7 @@ textarea:focus {
 /*Header Middle Wishlist*/
 .hm-wishlist {
 	float: left;
-	margin-right: 25px;
+	margin-right: 20px;
 	position: relative;
 }
 .hm-wishlist > a {
@@ -5970,6 +5970,9 @@ textarea.form-control{
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	
+}
+.page-banner h1{
 	color: #fff;
 	font-size: 66px;
 	font-weight: 900;
@@ -6028,7 +6031,76 @@ textarea.form-control{
 	background: #C6E4F2;
   }
 
+
+  /* cart pages */
+  .mobile-cart{
+	display: none;
+  }
+  .cart .card-title {
+    font-weight: bold;
+}
+.checkout{
+    border: 1px solid #a5a5a54a;
+    border-bottom: 2px solid #000;
+    padding: 20px 15px;
+    margin: 15px 0;
+    border-radius: 10px;
+}
+.cart .product-listing {
+    transition: all 0.3s linear;
+}
+.cart .product-listing:hover {
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.3);
+}
+.cart .product-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+.cart .cart-image {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+.cart .brand-img{
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+}
+
+.cart .footer-title{
+    position: relative;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+.cart .footer-title::after{
+    z-index: 999;
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: #0d6efd;
+    width: 15%;
+    height: 2px;
+}
+.cart .footer-app{
+    width: 150px;
+    object-fit: contain;
+}
+
+@media screen and (max-width: 789px) {
+    .cart .cart-image {
+        width: 120px;
+        height: 120px;
+    }
+}
+
+  
 @media (min-width: 320px) and (max-width: 480px){
+	.mean-container .mean-bar {
+		z-index: inherit;
+	}
 	.pop-login-content a {
 		margin: 14px 5px;
 	}
@@ -6071,5 +6143,20 @@ textarea.form-control{
     }
 	.pages-part .modal-dialog {
 		max-width: 100%;
+	}
+	.page-banner {
+		background-size: 100% 100%;
+		height: inherit;
+	}
+	.page-banner h1 {
+		color: #ffb309;
+		font-size: 30px;
+		font-weight: 800;
+	}
+	.large-de{
+		display: none;
+	}
+	.mobile-cart{
+		display: block;
 	}
 }

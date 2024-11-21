@@ -1,0 +1,1072 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ASPV International Production | Private Limited</title>
+            <link rel="shortcut icon" href="images/logos/faviwhite.png" type="image/x-icon">
+            <link rel="stylesheet" href="css/material-design-iconic-font.min.css">
+            <link rel="stylesheet" href="css/font-awesome.min.css">
+            <link rel="stylesheet" href="css/fontawesome-stars.css">
+            <link rel="stylesheet" href="css/meanmenu.css">
+            <link rel="stylesheet" href="css/owl.carousel.min.css">
+            <link rel="stylesheet" href="css/slick.css">
+            <link rel="stylesheet" href="css/animate.css">
+            <link rel="stylesheet" href="css/jquery-ui.min.css">
+            <link rel="stylesheet" href="css/venobox.css">
+            <link rel="stylesheet" href="css/nice-select.css">
+            <link rel="stylesheet" href="css/magnific-popup.css">
+            <link rel="stylesheet" href="css/bootstrap.min.css">
+            <link rel="stylesheet" href="css/helper.css">
+            <link rel="stylesheet" href="css/style.css">
+            <link rel="stylesheet" href="css/responsive.css">
+            <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+            <style>
+                .list-group-item.active {
+            background: #06C167 !important;
+        }
+        .bg-warning {
+            background: #06C167 !important;
+        }
+        .modal-content {
+                background-color: #fefefe;
+                margin: 4% auto;
+                padding: 20px;
+                border: 1px solid #888;
+                width: 70%;
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+                transition: transform 0.3s ease-in-out;
+                /*transform: translateY(-100%);*/
+            }
+            .close {
+                float: right;
+                text-align: right;
+                font-size: 30px;
+            }
+            .modal-content h2 {
+                text-align: center;
+                margin-top: -35px;
+            }
+            .button_div {
+                justify-content: center;
+                text-align: center;
+            }
+            .button_div button {
+                margin-right: 10px;
+                background: #06C167;
+                border: 1px solid #06C167;
+                padding: 5px 15px;
+                color: #FFFFFF;
+                border-radius: 2px;
+            }
+            #addAddressForm input {
+                padding: 5px;
+            }
+            .nice-select {
+                padding: 0px !important;
+                height: 38px !important;
+                line-height: 38px !important;
+            }
+            
+            .add_address_button {
+                background: #06C167;
+                border: 1px solid #06C167;
+                padding: 5px 15px;
+                color: #FFFFFF;
+                border-radius: 2px;
+            }
+            
+            @media (max-width: 768px) {
+                .main_flex_div {
+                    display: flex;
+                    flex-direction: column;
+                }
+                .inner_flex_div {
+                    min-width: 100% !important;
+                }
+                .modal-content {
+                    padding: 10px 0px !important;
+                    min-width: 95% !important;
+                    height: 700px;
+                    overflow: scroll;
+                }
+                .close {
+                    margin-right: 10px;
+                }
+            }
+            
+            .list-group-item.active {
+    background: #ffc107;
+}
+/* end common class */
+.top-status ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+}
+.top-status ul li {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border: 8px solid #ddd;
+    box-shadow: 1px 1px 10px 1px #ddd inset;
+    margin: 10px 5px;
+}
+.top-status ul li.active {
+    border-color: #06C167;
+    box-shadow: 1px 1px 20px 1px #ffc107 inset;
+}
+/* end top status */
+
+ul.timeline {
+    list-style-type: none;
+    position: relative;
+}
+ul.timeline:before {
+    content: ' ';
+    background: #d4d9df;
+    display: inline-block;
+    position: absolute;
+    left: 29px;
+    width: 2px;
+    height: 100%;
+    z-index: 400;
+}
+ul.timeline > li {
+    margin: 20px 0;
+    padding-left: 65px;
+}
+ul.timeline > li:before {
+    content: '\2713';
+    background: #fff;
+    display: inline-block;
+    position: absolute;
+    border-radius: 50%;
+    border: 0;
+    left: 5px;
+    width: 50px;
+    height: 50px;
+    z-index: 400;
+    text-align: center;
+    line-height: 50px;
+    color: #d4d9df;
+    font-size: 24px;
+    border: 2px solid var(--ogenix-primary);
+}
+ul.timeline > li.active:before {
+    content: '\2713';
+    background: #28a745;
+    display: inline-block;
+    position: absolute;
+    border-radius: 50%;
+    border: 0;
+    left: 5px;
+    width: 50px;
+    height: 50px;
+    z-index: 400;
+    text-align: center;
+    line-height: 50px;
+    color: #fff;
+    font-size: 30px;
+    border: 2px solid var(--ogenix-primary);
+}
+            
+            </style>
+        </head>
+        <body>
+            <div class="body-wrapper">
+                <header class="li-header-4 header-sticky stick">
+                    <div class="header-top">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-3 col-md-4">
+                                    <div class="header-top-left">
+                                        <ul class="phone-wrap">
+                                            <li><span>Telephone Enquiry:</span><a href="#">(+123) 123 321 345</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-lg-9 col-md-8">
+                                    <div class="header-top-right">
+                                        <ul class="ht-menu">
+                                            <li><span class="px-2">Email Enquiry:</span><a href="#">aspvinternation@info.in</a></li>
+                                            <li>
+                                                <div class="ht-setting-trigger"><span>Setting</span></div>
+                                                <div class="setting ht-setting">
+                                                    <ul class="ht-setting-list">
+                                                        <li><a href="#">My Account</a></li>
+                                                        <li><a href="#">Checkout</a></li>
+                                                        <li><a href="#">Sign In</a></li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="header-middle pl-sm-0 pr-sm-0 pl-xs-0 pr-xs-0 d-lg-none d-sm-block">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-3">
+                                    <div class="logo pb-sm-30 pb-xs-30">
+                                        <a href="index.html">
+                                            <img src="images/logos/aspv-logo1.png" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-9 pl-0 ml-sm-15 ml-xs-15">
+                                    <div class="header-middle-right">
+                                        <ul class="hm-menu">
+                                            <li class="hm-wishlist">
+                                                <a href="cart.html">
+                                                    <span class="cart-item-count wishlist-item-count">0</span>
+                                                    <i class="fa fa-heart-o"></i>
+                                                </a>
+                                            </li>
+                                            <li class="hm-minicart">
+                                                <div class="hm-minicart-trigger">
+                                                    <span class="item-icon"></span>
+                                                    <span class="item-text"><i class="fa fa-inr px-2" aria-hidden="true"></i>80.00
+                                                        <span class="cart-item-count">2</span>
+                                                    </span>
+                                                </div>
+                                                <span></span>
+                                                <div class="minicart">
+                                                    <ul class="minicart-product-list">
+                                                        <li>
+                                                            <a href="#" class="minicart-product-image">
+                                                                <img src="images/trnd-imgs/trend-item1.png" alt="cart products">
+                                                            </a>
+                                                            <div class="minicart-product-details">
+                                                                <h6><a href="#">Aenean eu tristique</a></h6>
+                                                                <span><i class="fa fa-inr px-2" aria-hidden="true"></i>40 x 1</span>
+                                                            </div>
+                                                            <button class="close">
+                                                                <i class="fa fa-close"></i>
+                                                            </button>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#" class="minicart-product-image">
+                                                                <img src="images/trnd-imgs/trend-item1.png" alt="cart products">
+                                                            </a>
+                                                            <div class="minicart-product-details">
+                                                                <h6><a href="#">Aenean eu tristique</a></h6>
+                                                                <span><i class="fa fa-inr px-2" aria-hidden="true"></i>40 x 1</span>
+                                                            </div>
+                                                            <button class="close">
+                                                                <i class="fa fa-close"></i>
+                                                            </button>
+                                                        </li>
+                                                    </ul>
+                                                    <p class="minicart-total">SUBTOTAL: <span><i class="fa fa-inr px-2" aria-hidden="true"></i>80.00</span></p>
+                                                    <div class="minicart-button">
+                                                        <a href="#" class="li-button li-button-dark li-button-fullwidth li-button-sm">
+                                                            <span>View Full Cart</span>
+                                                        </a>
+                                                        <a href="#" class="li-button li-button-fullwidth li-button-sm">
+                                                            <span>Checkout</span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="header-bottom d-lg-none d-sm-block d-xl-none ">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                <div class="hb-menu d-flex justify-content-center">
+                                    <nav>
+                                        <ul>
+                                            <li><a href="index.html">Home</a></li>
+                                            <li><a href="#">Products</a></li>
+                                            <li><a href="#">About</a></li>
+                                            <li><a href="#">Contact</a></li>
+                                            <li><a href="#">Customer Care</a></li>
+                                            <li><a href="#">Support</a></li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="header-bottom header-sticky stick d-none d-lg-block d-xl-block">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                <div class="hb-menu d-flex justify-content-center">
+                                    <nav>
+                                        <ul>
+                                            
+                                            <li class="dropdown-holder"><a href="#">All</a>
+                                                <ul class="hb-dropdown">
+                                                        <li><a href="allriceproducts.html">All Rice Products</a></li>
+                                                        <li><a href="allsugarproducts.html">All Sugar  Products</a></li>
+                                                        <li><a href="alloilproducts.html">All Oil Products</a></li>
+                                                        <li><a href="alldalproducts.html">All Dal Products</a></li>
+                                                        <li><a href="allsaltproducts.html">All Salt Products</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="dropdown-holder"><a href="#">Food Products</a>
+                                                    <ul class="hb-dropdown">
+                                                        <li class="sub-dropdown-holder"><a href="#">Whole Sales</a></li>
+                                                        <li class="sub-dropdown-holder"><a href="#">Retails sales</a> </li>
+                                                    </ul>
+                                            </li>
+                                            <li class="dropdown-holder"><a href="#">Gracery</a>
+                                                <ul class="hb-dropdown">
+                                                    <li class="sub-dropdown-holder"><a href="#">Whole Sales</a></li>
+                                                    <li class="sub-dropdown-holder"><a href="#">Retails sales</a> </li>
+                                                </ul>
+                                            </li>
+                                            <li class="dropdown-holder"><a href="#">Sales</a>
+                                                <ul class="hb-dropdown">
+                                                    <li class="sub-dropdown-holder"><a href="#">Whole sale Produts</a></li>
+                                                    <li class="sub-dropdown-holder"><a href="#">Retails sale products</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="#">Contact</a></li>
+                                            <li><a href="#">Customer Care</a></li>
+                                            <li><a href="#">Support</a></li>
+                                            <li><a href="index.html">Go Home</a></li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mobile-menu-area mobile-menu-area-4 d-sm-block d-lg-none d-xl-none col-12">
+                        <div class="container"> 
+                            <div class="row">
+                                <div class="mobile-menu"></div>
+                            </div>
+                        </div>
+                    </div>
+                </header>
+
+                <section class="page-banner">
+                    <div class="container">
+                        <div class="col-md-12">
+                            <div class="benner-contents">
+                                <h1>Customer Profile</h1>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                
+
+                <section class="my-5">
+                    <div class="container">
+                        <div class="main-body">
+                            <div class="row">
+                                <div class="col-lg-4 my-2">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div class="d-flex flex-column align-items-center text-center">
+                                                <img src="images/team/1.png" alt="Admin"
+                                                    class="rounded-circle p-1 bg-warning" width="110">
+                                                <div class="mt-3">
+                                                    <h4>Vgr</h4>
+                                                    <p class="text-secondary mb-1">+91 12345 698750</p>
+                                                    <p class="text-muted font-size-sm">Delhi, NCR</p>
+                                                </div>
+                                            </div>
+                                            <div class="list-group list-group-flush text-center mt-4">
+                                                <a href="#" class="list-group-item list-group-item-action border-0 " onclick="showProfileDetails()">
+                                                    Profile Informaton
+                                                </a>
+                                                <a href="#" class="list-group-item list-group-item-action border-0" onclick="showOrderDetails()">Orders</a>
+                                                
+                                                <a href="#" class="list-group-item list-group-item-action border-0 active"
+                                                    onclick="showAddressBook()">
+                                                    Address Book
+                                                </a>
+                                                <a href="#" class="list-group-item list-group-item-action border-0">Logout</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-8 my-2">
+                                    <div  id="orderDetails" class="order_card">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div class="top-status">
+                                                <h5>ORDER# 00000</h5>
+                                                <ul>
+                                                    <li class="active">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1"
+                                                            viewBox="0 0 512 512" width="50" height="50">
+                                                            <title> Clock Delivery package </title>
+                                                            <path
+                                                                d="M316.96,424.4A96,96,0,1,1,400,472.22,95.391,95.391,0,0,1,316.96,424.4Z"
+                                                                style="fill:#6fe3ff" />
+                                                            <path
+                                                                d="M400,135.55V280.22A96.008,96.008,0,0,0,316.96,424.4L208,487.3V246.38L399.98,135.54Z"
+                                                                style="fill:#c16752" />
+                                                            <polygon
+                                                                points="208 246.38 141.14 207.78 333.13 96.94 399.98 135.54 208 246.38"
+                                                                style="fill:#e48e66" />
+                                                            <polygon
+                                                                points="333.13 96.94 141.14 207.78 92.21 179.53 284.19 68.69 333.13 96.94"
+                                                                style="fill:#e5d45a" />
+                                                            <polygon
+                                                                points="208 24.7 284.19 68.69 92.21 179.53 92.2 179.53 16.02 135.54 208 24.7"
+                                                                style="fill:#af593c" />
+                                                            <polygon
+                                                                points="208 246.38 208 487.3 16 376.45 16 135.55 16.02 135.54 92.2 179.53 92.2 339.28 115.45 329.68 140.8 358.48 140.8 207.98 141.14 207.78 208 246.38"
+                                                                style="fill:#e48e66" />
+                                                            <polygon
+                                                                points="141.14 207.78 140.8 207.98 140.8 358.48 115.45 329.68 92.2 339.28 92.2 179.53 92.21 179.53 141.14 207.78"
+                                                                style="fill:#f8ec7d" />
+                                                            <path
+                                                                d="M284.75,269.594l-17.9-18.959a7,7,0,0,0-11.256,1.49l-16.9,31.44a7,7,0,0,0,6.16,10.316,7.185,7.185,0,0,0,6.292-3.687L255,283.247V343.42a7,7,0,1,0,14,0V273.051l5.69,6.154a6.927,6.927,0,0,0,9.835.285A7,7,0,0,0,284.75,269.594Z"
+                                                                style="fill:#6fe3ff" />
+                                                            <path
+                                                                d="M40.83,378.37a7,7,0,0,1-7-7V345.45a7,7,0,0,1,14,0v25.92A7,7,0,0,1,40.83,378.37Z"
+                                                                style="fill:#f8ec7d" />
+                                                            <path
+                                                                d="M69.25,395a7,7,0,0,1-7-7V364.65a7,7,0,0,1,14,0V388A7,7,0,0,1,69.25,395Z"
+                                                                style="fill:#f8ec7d" />
+                                                            <path
+                                                                d="M97.68,411.41a7,7,0,0,1-7-7V383.85a7,7,0,0,1,14,0v20.56A7,7,0,0,1,97.68,411.41Z"
+                                                                style="fill:#f8ec7d" />
+                                                            <path
+                                                                d="M126.1,427.82a7,7,0,0,1-7-7V403.05a7,7,0,0,1,14,0v17.77A7,7,0,0,1,126.1,427.82Z"
+                                                                style="fill:#f8ec7d" />
+                                                            <path
+                                                                d="M154.52,444.61a7,7,0,0,1-7-7V422.25a7,7,0,0,1,14,0v15.36A7,7,0,0,1,154.52,444.61Z"
+                                                                style="fill:#f8ec7d" />
+                                                            <path
+                                                                d="M247.777,384.941a7,7,0,0,1-3.507-13.064l31.89-18.41a7,7,0,0,1,7,12.125L251.27,384A6.964,6.964,0,0,1,247.777,384.941Z"
+                                                                style="fill:#f8ec7d" />
+                                                            <path
+                                                                d="M432.039,413.22a6.975,6.975,0,0,1-4.783-1.89l-32.04-30A7,7,0,0,1,393,376.22V313.97a7,7,0,0,1,14,0v59.215l29.824,27.925a7,7,0,0,1-4.785,12.11Z"
+                                                                style="fill:#2561a1" />
+                                                        </svg>
+                                                        <span>Pending</span>
+                                                    </li>
+                                                    <li>
+                                                        <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1"
+                                                            viewBox="0 0 512 512" width="50" height="50">
+                                                            <title> Clock Delivery package </title>
+                                                            <path
+                                                                d="M316.96,424.4A96,96,0,1,1,400,472.22,95.391,95.391,0,0,1,316.96,424.4Z"
+                                                                style="fill:#6fe3ff" />
+                                                            <path
+                                                                d="M400,135.55V280.22A96.008,96.008,0,0,0,316.96,424.4L208,487.3V246.38L399.98,135.54Z"
+                                                                style="fill:#c16752" />
+                                                            <polygon
+                                                                points="208 246.38 141.14 207.78 333.13 96.94 399.98 135.54 208 246.38"
+                                                                style="fill:#e48e66" />
+                                                            <polygon
+                                                                points="333.13 96.94 141.14 207.78 92.21 179.53 284.19 68.69 333.13 96.94"
+                                                                style="fill:#e5d45a" />
+                                                            <polygon
+                                                                points="208 24.7 284.19 68.69 92.21 179.53 92.2 179.53 16.02 135.54 208 24.7"
+                                                                style="fill:#af593c" />
+                                                            <polygon
+                                                                points="208 246.38 208 487.3 16 376.45 16 135.55 16.02 135.54 92.2 179.53 92.2 339.28 115.45 329.68 140.8 358.48 140.8 207.98 141.14 207.78 208 246.38"
+                                                                style="fill:#e48e66" />
+                                                            <polygon
+                                                                points="141.14 207.78 140.8 207.98 140.8 358.48 115.45 329.68 92.2 339.28 92.2 179.53 92.21 179.53 141.14 207.78"
+                                                                style="fill:#f8ec7d" />
+                                                            <path
+                                                                d="M284.75,269.594l-17.9-18.959a7,7,0,0,0-11.256,1.49l-16.9,31.44a7,7,0,0,0,6.16,10.316,7.185,7.185,0,0,0,6.292-3.687L255,283.247V343.42a7,7,0,1,0,14,0V273.051l5.69,6.154a6.927,6.927,0,0,0,9.835.285A7,7,0,0,0,284.75,269.594Z"
+                                                                style="fill:#6fe3ff" />
+                                                            <path
+                                                                d="M40.83,378.37a7,7,0,0,1-7-7V345.45a7,7,0,0,1,14,0v25.92A7,7,0,0,1,40.83,378.37Z"
+                                                                style="fill:#f8ec7d" />
+                                                            <path
+                                                                d="M69.25,395a7,7,0,0,1-7-7V364.65a7,7,0,0,1,14,0V388A7,7,0,0,1,69.25,395Z"
+                                                                style="fill:#f8ec7d" />
+                                                            <path
+                                                                d="M97.68,411.41a7,7,0,0,1-7-7V383.85a7,7,0,0,1,14,0v20.56A7,7,0,0,1,97.68,411.41Z"
+                                                                style="fill:#f8ec7d" />
+                                                            <path
+                                                                d="M126.1,427.82a7,7,0,0,1-7-7V403.05a7,7,0,0,1,14,0v17.77A7,7,0,0,1,126.1,427.82Z"
+                                                                style="fill:#f8ec7d" />
+                                                            <path
+                                                                d="M154.52,444.61a7,7,0,0,1-7-7V422.25a7,7,0,0,1,14,0v15.36A7,7,0,0,1,154.52,444.61Z"
+                                                                style="fill:#f8ec7d" />
+                                                            <path
+                                                                d="M247.777,384.941a7,7,0,0,1-3.507-13.064l31.89-18.41a7,7,0,0,1,7,12.125L251.27,384A6.964,6.964,0,0,1,247.777,384.941Z"
+                                                                style="fill:#f8ec7d" />
+                                                            <path
+                                                                d="M432.039,413.22a6.975,6.975,0,0,1-4.783-1.89l-32.04-30A7,7,0,0,1,393,376.22V313.97a7,7,0,0,1,14,0v59.215l29.824,27.925a7,7,0,0,1-4.785,12.11Z"
+                                                                style="fill:#2561a1" />
+                                                        </svg>
+                                                        <span>Pending</span>
+                                                    </li>
+                                                    <li>
+                                                        <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1"
+                                                            viewBox="0 0 512 512" width="50" height="50">
+                                                            <title> Clock Delivery package </title>
+                                                            <path
+                                                                d="M316.96,424.4A96,96,0,1,1,400,472.22,95.391,95.391,0,0,1,316.96,424.4Z"
+                                                                style="fill:#6fe3ff" />
+                                                            <path
+                                                                d="M400,135.55V280.22A96.008,96.008,0,0,0,316.96,424.4L208,487.3V246.38L399.98,135.54Z"
+                                                                style="fill:#c16752" />
+                                                            <polygon
+                                                                points="208 246.38 141.14 207.78 333.13 96.94 399.98 135.54 208 246.38"
+                                                                style="fill:#e48e66" />
+                                                            <polygon
+                                                                points="333.13 96.94 141.14 207.78 92.21 179.53 284.19 68.69 333.13 96.94"
+                                                                style="fill:#e5d45a" />
+                                                            <polygon
+                                                                points="208 24.7 284.19 68.69 92.21 179.53 92.2 179.53 16.02 135.54 208 24.7"
+                                                                style="fill:#af593c" />
+                                                            <polygon
+                                                                points="208 246.38 208 487.3 16 376.45 16 135.55 16.02 135.54 92.2 179.53 92.2 339.28 115.45 329.68 140.8 358.48 140.8 207.98 141.14 207.78 208 246.38"
+                                                                style="fill:#e48e66" />
+                                                            <polygon
+                                                                points="141.14 207.78 140.8 207.98 140.8 358.48 115.45 329.68 92.2 339.28 92.2 179.53 92.21 179.53 141.14 207.78"
+                                                                style="fill:#f8ec7d" />
+                                                            <path
+                                                                d="M284.75,269.594l-17.9-18.959a7,7,0,0,0-11.256,1.49l-16.9,31.44a7,7,0,0,0,6.16,10.316,7.185,7.185,0,0,0,6.292-3.687L255,283.247V343.42a7,7,0,1,0,14,0V273.051l5.69,6.154a6.927,6.927,0,0,0,9.835.285A7,7,0,0,0,284.75,269.594Z"
+                                                                style="fill:#6fe3ff" />
+                                                            <path
+                                                                d="M40.83,378.37a7,7,0,0,1-7-7V345.45a7,7,0,0,1,14,0v25.92A7,7,0,0,1,40.83,378.37Z"
+                                                                style="fill:#f8ec7d" />
+                                                            <path
+                                                                d="M69.25,395a7,7,0,0,1-7-7V364.65a7,7,0,0,1,14,0V388A7,7,0,0,1,69.25,395Z"
+                                                                style="fill:#f8ec7d" />
+                                                            <path
+                                                                d="M97.68,411.41a7,7,0,0,1-7-7V383.85a7,7,0,0,1,14,0v20.56A7,7,0,0,1,97.68,411.41Z"
+                                                                style="fill:#f8ec7d" />
+                                                            <path
+                                                                d="M126.1,427.82a7,7,0,0,1-7-7V403.05a7,7,0,0,1,14,0v17.77A7,7,0,0,1,126.1,427.82Z"
+                                                                style="fill:#f8ec7d" />
+                                                            <path
+                                                                d="M154.52,444.61a7,7,0,0,1-7-7V422.25a7,7,0,0,1,14,0v15.36A7,7,0,0,1,154.52,444.61Z"
+                                                                style="fill:#f8ec7d" />
+                                                            <path
+                                                                d="M247.777,384.941a7,7,0,0,1-3.507-13.064l31.89-18.41a7,7,0,0,1,7,12.125L251.27,384A6.964,6.964,0,0,1,247.777,384.941Z"
+                                                                style="fill:#f8ec7d" />
+                                                            <path
+                                                                d="M432.039,413.22a6.975,6.975,0,0,1-4.783-1.89l-32.04-30A7,7,0,0,1,393,376.22V313.97a7,7,0,0,1,14,0v59.215l29.824,27.925a7,7,0,0,1-4.785,12.11Z"
+                                                                style="fill:#2561a1" />
+                                                        </svg>
+                                                        <span>Pending</span>
+                                                    </li>
+                                                    <li>
+                                                        <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1"
+                                                            viewBox="0 0 512 512" width="50" height="50">
+                                                            <title> Clock Delivery package </title>
+                                                            <path
+                                                                d="M316.96,424.4A96,96,0,1,1,400,472.22,95.391,95.391,0,0,1,316.96,424.4Z"
+                                                                style="fill:#6fe3ff" />
+                                                            <path
+                                                                d="M400,135.55V280.22A96.008,96.008,0,0,0,316.96,424.4L208,487.3V246.38L399.98,135.54Z"
+                                                                style="fill:#c16752" />
+                                                            <polygon
+                                                                points="208 246.38 141.14 207.78 333.13 96.94 399.98 135.54 208 246.38"
+                                                                style="fill:#e48e66" />
+                                                            <polygon
+                                                                points="333.13 96.94 141.14 207.78 92.21 179.53 284.19 68.69 333.13 96.94"
+                                                                style="fill:#e5d45a" />
+                                                            <polygon
+                                                                points="208 24.7 284.19 68.69 92.21 179.53 92.2 179.53 16.02 135.54 208 24.7"
+                                                                style="fill:#af593c" />
+                                                            <polygon
+                                                                points="208 246.38 208 487.3 16 376.45 16 135.55 16.02 135.54 92.2 179.53 92.2 339.28 115.45 329.68 140.8 358.48 140.8 207.98 141.14 207.78 208 246.38"
+                                                                style="fill:#e48e66" />
+                                                            <polygon
+                                                                points="141.14 207.78 140.8 207.98 140.8 358.48 115.45 329.68 92.2 339.28 92.2 179.53 92.21 179.53 141.14 207.78"
+                                                                style="fill:#f8ec7d" />
+                                                            <path
+                                                                d="M284.75,269.594l-17.9-18.959a7,7,0,0,0-11.256,1.49l-16.9,31.44a7,7,0,0,0,6.16,10.316,7.185,7.185,0,0,0,6.292-3.687L255,283.247V343.42a7,7,0,1,0,14,0V273.051l5.69,6.154a6.927,6.927,0,0,0,9.835.285A7,7,0,0,0,284.75,269.594Z"
+                                                                style="fill:#6fe3ff" />
+                                                            <path
+                                                                d="M40.83,378.37a7,7,0,0,1-7-7V345.45a7,7,0,0,1,14,0v25.92A7,7,0,0,1,40.83,378.37Z"
+                                                                style="fill:#f8ec7d" />
+                                                            <path
+                                                                d="M69.25,395a7,7,0,0,1-7-7V364.65a7,7,0,0,1,14,0V388A7,7,0,0,1,69.25,395Z"
+                                                                style="fill:#f8ec7d" />
+                                                            <path
+                                                                d="M97.68,411.41a7,7,0,0,1-7-7V383.85a7,7,0,0,1,14,0v20.56A7,7,0,0,1,97.68,411.41Z"
+                                                                style="fill:#f8ec7d" />
+                                                            <path
+                                                                d="M126.1,427.82a7,7,0,0,1-7-7V403.05a7,7,0,0,1,14,0v17.77A7,7,0,0,1,126.1,427.82Z"
+                                                                style="fill:#f8ec7d" />
+                                                            <path
+                                                                d="M154.52,444.61a7,7,0,0,1-7-7V422.25a7,7,0,0,1,14,0v15.36A7,7,0,0,1,154.52,444.61Z"
+                                                                style="fill:#f8ec7d" />
+                                                            <path
+                                                                d="M247.777,384.941a7,7,0,0,1-3.507-13.064l31.89-18.41a7,7,0,0,1,7,12.125L251.27,384A6.964,6.964,0,0,1,247.777,384.941Z"
+                                                                style="fill:#f8ec7d" />
+                                                            <path
+                                                                d="M432.039,413.22a6.975,6.975,0,0,1-4.783-1.89l-32.04-30A7,7,0,0,1,393,376.22V313.97a7,7,0,0,1,14,0v59.215l29.824,27.925a7,7,0,0,1-4.785,12.11Z"
+                                                                style="fill:#2561a1" />
+                                                        </svg>
+                                                        <span>Pending</span>
+                                                    </li>
+                                                    <li>
+                                                        <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1"
+                                                            viewBox="0 0 512 512" width="50" height="50">
+                                                            <title> Clock Delivery package </title>
+                                                            <path
+                                                                d="M316.96,424.4A96,96,0,1,1,400,472.22,95.391,95.391,0,0,1,316.96,424.4Z"
+                                                                style="fill:#6fe3ff" />
+                                                            <path
+                                                                d="M400,135.55V280.22A96.008,96.008,0,0,0,316.96,424.4L208,487.3V246.38L399.98,135.54Z"
+                                                                style="fill:#c16752" />
+                                                            <polygon
+                                                                points="208 246.38 141.14 207.78 333.13 96.94 399.98 135.54 208 246.38"
+                                                                style="fill:#e48e66" />
+                                                            <polygon
+                                                                points="333.13 96.94 141.14 207.78 92.21 179.53 284.19 68.69 333.13 96.94"
+                                                                style="fill:#e5d45a" />
+                                                            <polygon
+                                                                points="208 24.7 284.19 68.69 92.21 179.53 92.2 179.53 16.02 135.54 208 24.7"
+                                                                style="fill:#af593c" />
+                                                            <polygon
+                                                                points="208 246.38 208 487.3 16 376.45 16 135.55 16.02 135.54 92.2 179.53 92.2 339.28 115.45 329.68 140.8 358.48 140.8 207.98 141.14 207.78 208 246.38"
+                                                                style="fill:#e48e66" />
+                                                            <polygon
+                                                                points="141.14 207.78 140.8 207.98 140.8 358.48 115.45 329.68 92.2 339.28 92.2 179.53 92.21 179.53 141.14 207.78"
+                                                                style="fill:#f8ec7d" />
+                                                            <path
+                                                                d="M284.75,269.594l-17.9-18.959a7,7,0,0,0-11.256,1.49l-16.9,31.44a7,7,0,0,0,6.16,10.316,7.185,7.185,0,0,0,6.292-3.687L255,283.247V343.42a7,7,0,1,0,14,0V273.051l5.69,6.154a6.927,6.927,0,0,0,9.835.285A7,7,0,0,0,284.75,269.594Z"
+                                                                style="fill:#6fe3ff" />
+                                                            <path
+                                                                d="M40.83,378.37a7,7,0,0,1-7-7V345.45a7,7,0,0,1,14,0v25.92A7,7,0,0,1,40.83,378.37Z"
+                                                                style="fill:#f8ec7d" />
+                                                            <path
+                                                                d="M69.25,395a7,7,0,0,1-7-7V364.65a7,7,0,0,1,14,0V388A7,7,0,0,1,69.25,395Z"
+                                                                style="fill:#f8ec7d" />
+                                                            <path
+                                                                d="M97.68,411.41a7,7,0,0,1-7-7V383.85a7,7,0,0,1,14,0v20.56A7,7,0,0,1,97.68,411.41Z"
+                                                                style="fill:#f8ec7d" />
+                                                            <path
+                                                                d="M126.1,427.82a7,7,0,0,1-7-7V403.05a7,7,0,0,1,14,0v17.77A7,7,0,0,1,126.1,427.82Z"
+                                                                style="fill:#f8ec7d" />
+                                                            <path
+                                                                d="M154.52,444.61a7,7,0,0,1-7-7V422.25a7,7,0,0,1,14,0v15.36A7,7,0,0,1,154.52,444.61Z"
+                                                                style="fill:#f8ec7d" />
+                                                            <path
+                                                                d="M247.777,384.941a7,7,0,0,1-3.507-13.064l31.89-18.41a7,7,0,0,1,7,12.125L251.27,384A6.964,6.964,0,0,1,247.777,384.941Z"
+                                                                style="fill:#f8ec7d" />
+                                                            <path
+                                                                d="M432.039,413.22a6.975,6.975,0,0,1-4.783-1.89l-32.04-30A7,7,0,0,1,393,376.22V313.97a7,7,0,0,1,14,0v59.215l29.824,27.925a7,7,0,0,1-4.785,12.11Z"
+                                                                style="fill:#2561a1" />
+                                                        </svg>
+                                                        <span>Pending</span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card mt-4">
+                                        <div class="card-body p-0 table-responsive">
+                                            <h4 class="p-3 mb-0">Product Description</h4>
+                                            <table class="table mb-0">
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col">Description</th>
+                                                        <th scope="col"></th>
+                                                        <th scope="col">Quantity</th>
+                                                        <th scope="col">Amount</th>
+                                                        <th scope="col">Status</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        
+                                                        <th>
+                                                            <img src="https://bootdey.com/img/Content/avatar/avatar6.png"
+                                                                alt="product" class="" width="80">
+                                                        </th>
+                                                        <td>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem,
+                                                            facilis.</td>
+                                                        <td>₹100 X 2</td>
+                                                        <td><strong>₹200</strong></td>
+                                                        <td><span class="badge badge-warning">PENDING</span></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th colspan="3">
+                                                            <span>Status:</span>
+                                                            <span class="badge badge-success">PAID</span>
+                                                        </th>
+                                                        <td>
+                                                            <span class="text-muted">Total Price</span>
+                                                            <strong>₹200</strong>
+                                                        </td>
+                                                        <td>
+                                                            <span class="text-muted">Total Paid</span>
+                                                            <strong>₹200</strong>
+                                                        </td>
+                                                       
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <div class="card mt-4">
+                                        <div class="card-body">
+                                            <h4>Timeline</h4>
+                                                <ul class="timeline">
+                                                    <li class="active">
+                                                        <h6>PICKED</h6>
+                                                        <p class="mb-0 text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque Lorem ipsum dolor</p>
+                                                        <o class="text-muted">21 March, 2014</o></p>
+                                                    </li>
+                                                    <li>
+                                                        <h6>PICKED</h6>
+                                                        <p class="mb-0 text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque</p>
+                                                        <o class="text-muted">21 March, 2014</o></p>
+                                                    </li>
+                                                    <li>
+                                                        <h6>PICKED</h6>
+                                                        <p class="mb-0 text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque</p>
+                                                        <o class="text-muted">21 March, 2014</o></p>
+                                                    </li>
+                                                    <li>
+                                                        <h6>PICKED</h6>
+                                                        <p class="mb-0 text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque</p>
+                                                        <o class="text-muted">21 March, 2014</o></p>
+                                                    </li>
+                                                    <li>
+                                                        <h6>PICKED</h6>
+                                                        <p class="mb-0 text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque</p>
+                                                        <o class="text-muted">21 March, 2014</o></p>
+                                                    </li>
+                                                </ul>
+                                        </div>
+                                    </div>
+                                    </div>
+                                    
+                                     <div id="profileDetails" class="card" style="display: none;">
+                                    <div class="card-body">
+                                        <div class="profile-info">
+                                            <h5>Profile Information</h5>
+                                            <p><strong>Name:</strong> Vgr</p>
+                                            <p><strong>Email Address:</strong> Vgr@gmail.com</p>
+                                            <p><strong>Contact:</strong> +91 7493658737</p>
+                                            <p><strong>Date of Birth:</strong> 02-03-1999</p>
+                                            <p><strong>Gender:</strong> Female</p>
+                                            <p><strong>City:</strong> Delhi, NCR</p>
+                                            <p><strong>Height:</strong> 5.4</p>
+                                            <p><strong>Weight:</strong> 50</p>
+                                            <p><strong>Goal:</strong> Hair & Skin</p>
+                                            <p><strong>Preference:</strong> Pure Vegitarian</p>
+                                            <p><strong>Role:</strong> User</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div id="addressBook" class="card" style="display: none;">
+                                    <div class="card-body">
+                                        <h5>Address Book</h5>
+                                        <button class="add_address_button" onclick="showAddAddressModal()">Add Address</button>
+                                        
+                                        <div id="addressList">
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div id="addAddressModal" class="modal">
+                <div class="modal-content">
+                    <span class="close" onclick="closeAddAddressModal()">&times;</span>
+                    <h2>Add Address</h2>
+                    <form id="addAddressForm" onsubmit="saveAddress(event)">
+                        
+                        <div class="col-12 d-flex main_flex_div">
+                        <div class="col-4 d-flex flex-column inner_flex_div">
+                            <label for="name">Name:</label>
+                        <input type="text" id="name" required><br>
+                        </div>
+                        <div class="col-4 d-flex flex-column inner_flex_div">
+                            <label for="mobile">Mobile No.:</label>
+                        <input type="tel" id="mobile" required pattern="[0-9]{10}">
+                        </div>
+                        <div class="col-4 d-flex flex-column inner_flex_div">
+                             <label for="pincode">Pin code:</label>
+                        <input type="text" id="pincode" required><br>
+            
+                        </div>
+                        </div>
+                        
+                        
+                         <div class="col-12 d-flex main_flex_div">
+                        
+                        <div class="col-4 d-flex flex-column inner_flex_div">
+                            <label for="locality">Locality:</label>
+                        <input type="text" id="locality" required><br>
+                        </div>
+            
+                        <div class="col-4 d-flex flex-column inner_flex_div">
+                           <label for="city">City/District/Town:</label>
+                        <input type="text" id="city" required><br>
+            
+                        </div>
+                        
+                        <div class="col-4 d-flex flex-column inner_flex_div">
+                           <label for="state">State:</label>
+                        <select id="state" required>
+                            <option value="">Select a state</option>
+                            <option value="State 1">State 1</option>
+                            <option value="State 2">State 2</option>
+                            <option value="State 3">State 3</option>
+                        </select><br>
+                        </div>
+                        
+                        </div>
+                        
+                         <div class="col-12 d-flex main_flex_div">
+                        <div class="col-12 d-flex flex-column inner_flex_div">
+                            <label for="address">Address:</label>
+                         <textarea id="address" required></textarea><br>
+                        </div>
+                       
+                        </div>
+                        
+                        
+                         <div class="col-12 d-flex main_flex_div">
+                        <div class="col-6 d-flex flex-column inner_flex_div">
+                              <label for="landmark">Landmark (Optional):</label>
+                        <input type="text" id="landmark"><br>
+            
+                        </div>
+                        <div class="col-6 d-flex flex-column inner_flex_div">
+                           <label for="alternatePhone">Alternate Phone (Optional):</label>
+                        <input type="tel" id="alternatePhone" pattern="[0-9]{10}"><br>
+                        </div>
+            
+                        
+                        </div>
+                        
+                         <div class="col-12 d-flex button_div">
+                         <button type="submit">Save</button>
+                        <button type="button" onclick="closeAddAddressModal()">Cancel</button>
+                        </div>
+                        
+                        
+                    </form>
+                </div>
+            </div>
+            
+            
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            
+                
+
+                <footer class="footer-section ">
+                    <div class="container">
+                        <div class="footer-cta pt-5 pb-5 mb-3">
+                            <div class="row">
+                                <div class="col-xl-4 col-md-4 mb-30">
+                                    <div class="single-cta">
+                                        <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                        <div class="cta-text">
+                                            <h4>Find us</h4>
+                                            <span>Porur, Chennai 600028</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-4 col-md-4 mb-30">
+                                    <div class="single-cta">
+                                        <i class="fa fa-phone" aria-hidden="true"></i>
+                                        <div class="cta-text">
+                                            <h4>Call us</h4>
+                                            <span>+91 12345 69870</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-4 col-md-4 mb-30">
+                                    <div class="single-cta">
+                                        <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                                        <div class="cta-text">
+                                            <h4>Mail us</h4>
+                                            <span>aspvpvtlmt@info.com</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="footer-content pt-5">
+                            <div class="row">
+                                <div class="col-xl-4 col-lg-4 mb-30">
+                                    <div class="footer-widget">
+                                        <div class="footer-logo">
+                                            <a href="#"><img src="images/logos/aspv-logo-white.png" class="img-fluid" alt="logo"></a>
+                                        </div>
+                                        <div class="footer-text">
+                                            <p>Lorem ipsum dolor sit amet, consec tetur adipisicing elit, sed do eiusmod tempor incididuntut consec tetur adipisicing
+                                            elit,Lorem ipsum dolor sit amet.</p>
+                                        </div>
+                                        <div class="footer-social-icon">
+                                            <span>Follow us</span>
+                                            <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                            <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                                            <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
+                                    <div class="footer-widget">
+                                        <div class="footer-widget-heading">
+                                            <h3>Useful Links</h3>
+                                        </div>
+                                        <ul>
+                                            <li><a href="#">About Us</a></li>
+                                            <li><a href="#">Shopping</a></li>
+                                            <li><a href="#">Trending Deals</a></li>
+                                            <li><a href="#">FAQ</a></li>
+                                            <li><a href="#">Terms & Conditions</a></li>
+                                            <li><a href="#">Privacy Policy</a></li>
+                                            <li><a href="#">E-waste Policy</a></li>
+                                            <li><a href="#">Cancellation & Return Policy</a></li>
+                                            <li><a href="#">Shipping & Delivery Policy</a></li>
+                                            <li><a href="#">Support</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
+                                    <div class="footer-widget">
+                                        <div class="footer-widget-heading">
+                                            <h3>Help & Queries</h3>
+                                        </div>
+                                        <div class="footer-text mb-25">
+                                            <p>Customer Service, Disputes & Reports, Buyer Protection, Report IPR infringement</p>
+                                        </div>
+                                        <div class="subscribe-form">
+                                            <form action="#">
+                                                <input type="text" placeholder="Email Address">
+                                                <button><i class="fa fa-hand-o-right" aria-hidden="true"></i></button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="payments">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="pay text-center py-3">
+                                        <p>Our Payment Methods</p>
+                                    <a href="#"> <img src="images/payment/1.png" alt="pay"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="copyright-area">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-xl-6 col-lg-6 text-center text-lg-left">
+                                    <div class="copyright-text">
+                                        <p>Copyright &copy; 2018, All Right Reserved <a href="#">aspvinternationalproduction@info.in</a></p>
+                                    </div>
+                                </div>
+                                <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">
+                                    <div class="footer-menu">
+                                        <ul>
+                                            <li><a href="#">Home</a></li>
+                                            <li><a href="#">Terms</a></li>
+                                            <li><a href="#">Privacy</a></li>
+                                            <li><a href="#">Policy</a></li>
+                                            <li><a href="#">Contact</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+            <script src="js/vendor/jquery-1.12.4.min.js"></script>
+            <script src="js/vendor/popper.min.js"></script>
+            <script src="js/bootstrap.min.js"></script>
+            <script src="js/ajax-mail.js"></script>
+            <script src="js/jquery.meanmenu.min.js"></script>
+            <script src="js/wow.min.js"></script>
+            <script src="js/slick.min.js"></script>
+            <script src="js/owl.carousel.min.js"></script>
+            <script src="js/jquery.magnific-popup.min.js"></script>
+            <script src="js/isotope.pkgd.min.js"></script>
+            <script src="js/imagesloaded.pkgd.min.js"></script>
+            <script src="js/jquery.mixitup.min.js"></script>
+            <script src="js/jquery.countdown.min.js"></script>
+            <script src="js/jquery.counterup.min.js"></script>
+            <script src="js/waypoints.min.js"></script>
+            <script src="js/jquery.barrating.min.js"></script>
+            <script src="js/jquery-ui.min.js"></script>
+            <script src="js/venobox.min.js"></script>
+            <script src="js/jquery.nice-select.min.js"></script>
+            <script src="js/scrollUp.min.js"></script>
+            <script src="js/main.js"></script>
+            <script src="js/costum.js"></script>
+            <script>
+          
+                function showAddAddressModal() {
+             const modal = document.getElementById('addAddressModal');
+             modal.style.display = 'block';
+             isFormVisible = true;
+         }
+     
+         function closeAddAddressModal() {
+             const modal = document.getElementById('addAddressModal');
+             modal.style.display = 'none';
+             isFormVisible = false;
+         }
+               
+             function showProfileDetails() {
+                 hideAllSections();
+                 document.getElementById('profileDetails').style.display = 'block';
+                 setActiveLink(0);
+             }
+     
+             function showOrderDetails() {
+                 hideAllSections();
+                 document.getElementById('orderDetails').style.display = 'block';
+                 setActiveLink(1);
+             }
+     
+             function showAddressBook() {
+                 hideAllSections();
+                 document.getElementById('addressBook').style.display = 'block';
+                 setActiveLink(2);
+             }
+     
+             function hideAllSections() {
+                 document.getElementById('orderDetails').style.display = 'none';
+                 document.getElementById('profileDetails').style.display = 'none';
+                 document.getElementById('addressBook').style.display = 'none';
+             }
+     
+             function setActiveLink(index) {
+                 document.querySelector('.list-group-item.active').classList.remove('active');
+                 document.querySelectorAll('.list-group-item')[index].classList.add('active');
+             }
+     
+             showProfileDetails();
+         </script>
+        </body>
+    </html>

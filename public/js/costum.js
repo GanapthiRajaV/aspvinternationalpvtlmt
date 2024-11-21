@@ -25,3 +25,5 @@ $(document).ready(function(){
 //   $( "#close" ).click(function() {
 //     $( "#popUpForm" ).css("display", "none");
 //   });
+
+// Cart pages js 
